@@ -1,0 +1,24 @@
+{
+	"name": "await-limit",
+	"version": "0.1.0",
+	"description": "",
+	"main": "src/lib/awaitlimit.js",
+	"scripts": {
+		"start": "node src/example.js"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"keywords": [
+		"await",
+		"async",
+		"limit",
+		"pool",
+		"rate-limit",
+		"throttle",
+		"promise",
+		"control-flow",
+		"concurrency",
+		"parallel"
+	],
+	"license": "MIT"
+}
