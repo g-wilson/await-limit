@@ -55,7 +55,4 @@ module.exports = {
 		const result = await limiter(concurrency, array.map(i => () => iterator(i)));
 		return array.filter((el, i) => result[i]);
 	},
-	async flatMap(concurrency, array, iterator) {
-		return await limiter(concurrency, array.flatMap(i => () => iterator(i)));
-	},
 };

@@ -29,13 +29,6 @@ async function main() {
 		return ['A', 'C', 'F'].includes(letter);
 	});
 	console.log(resultsFilter);
-
-	// .flatMap maps and flattens (if Node version supports the native Array.prototype.flatMap)
-	const resultsFlatmap = await limit.flatMap(3, letters, async letter => {
-		await delay();
-		return [`${letter}--`, letter];
-	});
-	console.log(resultsFlatmap);
 }
 
 /**
