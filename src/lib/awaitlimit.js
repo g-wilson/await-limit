@@ -33,7 +33,7 @@ async function limiter(concurrency, tasks) {
 	await Promise.all(workers.map(fn => fn()));
 
 	if (errors.length) {
-		const err = new Error('Chunky encountered errors');
+		const err = new Error('AwaitLimit encountered errors');
 		err.details = errors;
 		throw err;
 	}
