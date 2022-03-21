@@ -1,6 +1,6 @@
 {
 	"name": "await-limit",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "",
 	"main": "src/lib/awaitlimit.js",
 	"typings": "types/main.d.ts",
