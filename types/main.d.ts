@@ -1,8 +1,8 @@
 declare module 'await-limit' {
 
-	export type Task<Tout> = () => Promise<Tout>
+	export type Task<Tout = void> = () => Promise<Tout>
 
-	export type IteratorTask<Tin, Tout> = (value: Tin) => Promise<Tout>
+	export type IteratorTask<Tin, Tout = void> = (value: Tin) => Promise<Tout>
 
 	export function each<Tout>(tasks: Task<Tout>[]): Tout[]
 	export function all<Tout>(concurrency: number, tasks: Task<Tout>[]): Tout[]
